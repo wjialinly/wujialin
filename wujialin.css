@@ -1,0 +1,245 @@
+*{
+        padding: 0;
+        margin: 0;
+}
+li{
+        display: block;
+        float: left;
+}
+body{
+        width: 1335px;
+        height: 1500px;
+        color: white;
+}
+p{
+        word-wrap:break-word;
+}
+input{
+        width: 98px;
+        height: 27px;
+        text-align: center;
+        border: 3px solid #1E90FF;
+        border-radius: 3px;
+        background-color:#1E90FF;
+
+}
+.first{
+        width:1335px;
+        height: 1420px;
+        background-image: url(aa.jpg);
+        background-repeat: repeat;
+        margin: 0 auto;
+}
+.head{
+        width:1335px;
+        height:35px;
+        background-color: rgba(0,0,0, 0.5);
+}
+.head>div{
+        position: absolute;
+        right:170px; 
+        top:0;
+}
+.head>ul{
+        position: absolute;
+        top:0;
+        left: 180px;
+}
+.head>ul>li>a{
+        text-align: center;
+        color: white;
+        line-height: 35px;
+        text-decoration: none;
+}
+.head>div>span>img{
+        height: 20px;
+        padding: 5px 5px;
+}
+.hr{
+        height: 1px;
+        background: black;
+}
+.logo{
+        position: absolute;
+        top: 72px;
+        left: 185px;
+}
+.search{
+        position: absolute;
+        top: 93px;
+        left:900px; 
+}
+.search>input{
+        width: 250px;
+        height: 30px;
+        background-color: black;
+        border: 1px solid ;
+        border-radius: 20px;
+}
+.daohang{
+        position: absolute;
+        left: 184px;
+        top: 137px;
+        width: 982px;
+        height: 62px;
+        background-color: #1988c1;        
+        border-radius:8px;
+}
+.daohang>ul{
+        text-decoration: none;
+        border-radius: 5px;
+}
+.daohang>ul>li{
+        display: block;        
+        height: 62px;        
+        position: relative;
+        float: left;
+        border:1px solid #66cccc;
+}
+.daohang>ul>li:hover{
+        background-color: #46a1d0;
+}
+.daohang>ul>li>a{
+        padding: 25px 35px;
+        line-height: 62px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+}
+.pic{
+        position: absolute;
+        left: 184px;
+        top: 218px;
+        width: 980px;
+        height: 423px;
+        background-color:black;
+}
+.blank{
+        width: 980px;
+        height: 358px;
+        background-color:white;
+}
+.blank>img{
+        width: 980px;
+        height: 358px;
+}
+.btn>*{
+        position: relative;
+        float: left;
+}
+.btn>h2{
+        padding: 13px 0 13px 150px;
+}
+.btn>p{
+        padding: 22px ;
+        line-height: 8px;
+}
+.btn>input{
+        position: absolute;
+        top: 376px;
+        left: 750px;
+}
+.circle{
+        position: absolute;
+        top: 660px;
+        left: 640px;
+        width:73px ;
+        height:20px;
+}
+.circle>div{
+        width: 18px;
+        height: 18px;
+        border-radius:100%;
+        background-color: white;
+        float: left;
+        margin: 0 3px;
+}
+.circle>div:hover{
+        background-color: #00BFFF;
+}
+.word{
+        position: absolute;
+        left: 184px;
+        top: 706px;
+        width: 979px;
+        height: 637px;        
+        background-color: rgba(0,0,0, 0.5);
+}
+.word>div{
+        display: block;
+        float: left;
+        margin: 10px 3px 0 0;
+}
+.hello>h1{
+        padding: 3px 0 0 10px;
+}
+.hello>p{
+        margin:20px;
+        color: #a8a8a8
+}
+.blank2{
+        width: 620px;
+        height: 153px;
+        position: absolute;
+        top: 460px;
+        left:10px;
+        background-color: rgba(0,0,0, 0.6);
+}
+.blank2>ul>li{
+        position: relative;
+        float: left;
+}
+.blank2>ul>li>p{
+        font-size: 4;
+        padding: 0 13px 0 25px;
+}
+.blank2>ul>li>p:hover{
+        color: #00BFFF; 
+}
+.blank2>ul>li>img.pic{
+        width: 127px;
+        height: 95px;
+        background-color: white;
+        margin: -175px 6px 0px -180px;
+}
+.blank2>ul>li>img.c{
+        padding: 55px 0;
+}
+.hello{
+        width: 618px;
+        height: 568px;
+}
+.text{
+        width: 288px;
+        height: 568px;
+}
+.text>ul>li{
+        white-space:nowrap;
+        margin:7px;
+        position: absolute;
+}
+.text2{
+        left: 650px;
+        top: 340px;
+        color: #808080
+}
+.footer{
+        position: absolute;
+        left: 184px;
+        top: 1359px;
+}
+.footer>ul>li>a{
+        text-decoration: none;
+        color: white;
+        font-size: 1;
+}
+.footer>*{
+        float: left;
+}
+.footer>div{
+        padding: 0 0 0 140px;
+}
+.map{
+        margin-left: 35px;
+        margin-top: 286px;
+}
