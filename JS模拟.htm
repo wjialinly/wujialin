@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///C:/Users/dell/Desktop/js%E6%A8%A1%E6%8B%9F.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>JS模拟</title>
+<script type="text/javascript">
+
+document.getElementsByClassName = function(){
+var tTagName ="*";
+if(arguments.length > 1){
+   tTagName = arguments[1];
+}
+if(arguments.length > 2){
+   var pObj = arguments[2]
+}
+else{
+   var pObj = document;
+}
+var objArr = pObj.getElementsByTagName(tTagName);
+var tRObj = new Array();
+for(var i=0; i<objArr.length; i++){
+   if(objArr[i].className == arguments[0]){
+    tRObj.push(objArr[i]);
+   }
+}
+return tRObj;
+}
+
+function test(){ 
+var obj=document.getElementsByClassName("b"); 
+for (var i=0;i<obj.length;i++){
+obj[i].style.color="#ff0000";
+}
+}
+function test2(){ 
+var obj=document.getElementsByClassName("b","DIV"); 
+for (var i=0;i<obj.length;i++){
+obj[i].style.color="#ff0000";
+}
+}
+function test3(){
+var myid=document.getElementById('num2');
+var obj=document.getElementsByClassName("b","DIV",myid); 
+for (var i=0;i<obj.length;i++){
+obj[i].style.color="#ff0000";
+}
+}
+</script>
+<style type="text/css">
+<!--
+.b,.a{ font-size: 14px; border:1px solid #ccc; margin:10px; padding:5px;font-weight:bold;}
+#num2,#num1 {border:1px solid #666; margin:15px;} 
+-->
+</style>
+</head>
+<body>
+<input type="button" name="button" id="button" value="所有class为2的元素" onclick="test()">
+<br>
+<input type="button" name="button" id="button" value="所有div里的class为2的元素" onclick="test2()">
+<br>
+<input type="button" name="button" id="button" value="无素num2中的div里的class为2的元素" onclick="test3()">
+<div id="num1">
+<div class="a">Class="2"</div>
+<div class="b">Class="2"</div>
+<div class="b">Class="2"</div>
+</div>
+<div id="num2">
+<div class="a">Class="1"</div>
+<p class="b">Class="2"</p>
+<div class="b">Class="2"</div>
+<div class="b">Class="2"</div>
+</div>
+
+</body></html>
